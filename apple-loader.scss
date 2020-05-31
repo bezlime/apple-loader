@@ -1,0 +1,61 @@
+.apple-loader__wrapper {
+  background: linear-gradient(231.76deg, #FFB3B3 21.43%, rgba(247, 173, 173, 0.34614) 67.88%, rgba(242, 171, 171, 0) 88.99%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.apple-loader__box {
+  margin: 0 auto;
+}
+
+.apple-loader__icon {
+  margin: 0 auto;
+  display: block;
+  animation-name: icon;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+
+  @keyframes icon {
+    0%   { 
+      transform: translateY(0); 
+    }
+    50%  { 
+      transform: translateY(-15px); 
+    }
+    100% { 
+      transform: translateY(0); 
+    }
+  }
+}
+
+.apple-loader__strip {
+  height: 1px;
+  background: #000;
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.apple-loader__strip-long {
+  width: 100px;
+  margin-bottom: 12px;
+}
+
+.apple-loader__loader {
+  border: 1px solid #000000;
+  background: #FC324B;
+  height: 38px;
+  width: 280px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.apple-loader__loading {
+  position: absolute;
+  background: #8DC63F;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}

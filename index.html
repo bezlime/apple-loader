@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple loader</title>
+  <link rel="stylesheet" href="./apple-loader.scss">
+</head>
+
+<body>
+  <div class="apple-loader__wrapper">
+    <div class="apple-loader__box">
+      <img class="apple-loader__icon" src="./apple.svg" alt="apple-loader">
+      <div class="apple-loader__strip"></div>
+      <div class="apple-loader__strip apple-loader__strip-long"></div>
+      <div class="apple-loader__loader">
+        <div class="apple-loader__loading" style="width: 0%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .apple-loader__loading {
+      animation-name: apple-loader;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+    }
+
+    @keyframes apple-loader {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+  </style>
+</body>
+
+</html>

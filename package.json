@@ -1,0 +1,16 @@
+{
+  "name": "apple-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.html",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Jane Bezmaternykh",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^1.12.4",
+    "sass": "^1.26.5"
+  }
+}
